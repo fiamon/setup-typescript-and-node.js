@@ -1,0 +1,20 @@
+{
+  "name": "setup-typescript-and-node",
+  "version": "1.0.0",
+  "description": "This is a quick setup for projects with Node.js and TypeScript",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "node.js",
+    "setup"
+  ],
+  "author": "Julio Fiamoncini",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "typescript": "^5.3.2"
+  }
+}
