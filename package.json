@@ -4,7 +4,9 @@
   "description": "This is a quick setup for projects with Node.js and TypeScript",
   "main": "src/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
+    "start": "node dist/src/server.js",
+    "build": "tsc"
   },
   "keywords": [
     "typescript",
@@ -15,6 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.10.2",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
   }
 }
