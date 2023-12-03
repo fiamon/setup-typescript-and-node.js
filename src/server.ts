@@ -1,1 +1,3 @@
-console.log('hello world')
+const idk = 'idk';
+
+console.log(idk);
