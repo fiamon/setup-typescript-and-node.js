@@ -12,10 +12,22 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module",
-    "extraFileExtensions": [".json"]
+    "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "root": true,
-  "rules": {}
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "printWidth": 80,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "always"
+      }
+    ]
+  }
 }
