@@ -1,11 +1,31 @@
-# setup-typescript-and-node.js
+## Functionalities
+
+- Jest setup and configs
+- TypeScript setup and configs
+- Husky setup and configs (will perform certain actions when you commit)
+- ESLint with Prettier
+
+
+## Instalation
 
 This is a quick setup for projects with Node.js and TypeScript
 
-### How o intstall
+Before installing, [download and install Node.js](https://nodejs.org/en/download/). 
+Node.js 18 or higher is required.
 
-```
+To start the installation, you must clone this repository.
+
+```shell
 git clone https://github.com/fiamon/setup-typescript-and-node.js.git
+```
 
-npm install || yarn
+After that, install the **development** dependencies.
+
+NPM:
+```shell
+npm install 
+```
+YARN: 
+```shell
+yarn
 ```
