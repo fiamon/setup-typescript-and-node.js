@@ -6,6 +6,11 @@
   "scripts": {
     "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts",
     "start": "node dist/src/server.js",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "prettier:check": "prettier --check 'src/**/*.ts",
+    "prettier:fix": "yarn prettier --write 'src/**/*.ts'",
+    "husky:prepare": "husky install",
     "build": "tsc"
   },
   "keywords": [
@@ -22,6 +27,8 @@
     "@typescript-eslint/parser": "^6.13.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "nodemon": "^3.0.2",
     "prettier": "^3.1.0",
     "ts-node": "^10.9.1",
