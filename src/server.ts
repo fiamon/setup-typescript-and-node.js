@@ -1,3 +1,1 @@
-const idk = 'idk';
-
-console.log(idk);
+console.log('Oi');
