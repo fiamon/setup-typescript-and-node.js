@@ -29,3 +29,13 @@ YARN:
 ```shell
 yarn
 ```
+You must run the following command to set husky on:
+
+NPM:
+```shell
+npx husky:prepare 
+```
+YARN: 
+```shell
+yarn husky:prepare
+```
