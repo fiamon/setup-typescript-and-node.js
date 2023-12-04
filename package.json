@@ -4,9 +4,8 @@
   "description": "This is a quick setup for projects with Node.js and TypeScript",
   "main": "src/server.ts",
   "scripts": {
-    "build": "tsc && tsc-alias",
-    "start": "node dist/src/server.js",
-    "start:dev": "nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register src/server.ts' -e ts",
+    "start": "tsc && node dist/src/server.js",
+    "start:dev": "tsx watch src/server.ts",
     "test": "jest --passWithNoTests",
     "test:watch": "yarn test --watch",
     "test:staged": "yarn test --findRelatedTests",
@@ -34,12 +33,9 @@
     "husky": "^8.0.3",
     "jest": "^29.7.0",
     "lint-staged": "^15.1.0",
-    "nodemon": "^3.0.2",
     "prettier": "^3.1.0",
     "ts-jest": "^29.1.1",
-    "ts-node": "^10.9.1",
-    "tsc-alias": "^1.8.8",
-    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.6.2",
     "typescript": "^5.3.2"
   }
 }
